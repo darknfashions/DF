@@ -38,49 +38,13 @@
       <div class="product-grid" id="productGrid"></div>
     </section>
 
-    <!-- Payment Section -->
-    <section id="pay" class="payment-section">
-      <h2>Pay via UPI or Razorpay</h2>
-      <div class="upi-box">
-        <div class="upi-id">14314589@upi</div>
-        <img src="https://api.qrserver.com/v1/create-qr-code/?data=upi://pay?pa=14314589@upi&pn=DARKEN&am=500&cu=INR&mode=02" alt="UPI QR" class="upi-qr">
-        <a href="#" class="upi-link" onclick="openUPIApp()">Pay with UPI App</a>
-        <a href="#" class="razorpay-link" id="razorpayBtn">Pay with Razorpay</a>
-      </div>
-    </section>
-
     <!-- Contact & Socials Section -->
     <section id="contact" class="contact-section">
       <h2>Contact & Socials</h2>
       <div class="social-links">
-        <a href="https://www.instagram.com/__darknfashions.blr?igsh=OHcwZXE0eXBhaGdu" target="_blank">Instagram</a>
-        <a href="https://www.facebook.com/profile.php?id=61581594635051" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/__darknfashions.blr?igsh=OHcwZXE0eXBhaGdu" target="_icon">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61581594635051" target="_iconr">Facebook</a>
         <a href="mailto:darknfashions@gmail.com">Email</a>
       </div>
       <div class="location">Based in Bangalore, India</div>
     </section>
-
-    <!-- Admin Dashboard/Login -->
-    <section id="dashboard" class="dashboard-section">
-      <h2>Admin Login</h2>
-      <div id="adminLoginBox">
-        <input type="tel" placeholder="Admin Mobile (10 digits)" id="adminMobile" maxlength="10">
-        <button onclick="sendOTP()">Send OTP</button>
-        <input type="text" placeholder="Enter OTP" id="adminOTP" style="display:none;">
-        <button onclick="verifyOTP()" id="otpBtn" style="display:none;">Login</button>
-      </div>
-      <div id="dashboardPanel" style="display:none;">
-        <h3>Orders</h3>
-        <div id="ordersList">
-          <p>No orders yet.</p>
-        </div>
-        <button onclick="logoutAdmin()">Logout</button>
-      </div>
-    </section>
-  </div>
-
-  <!-- Razorpay script -->
-  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-  <script src="script.js"></script>
-</body>
-</html>
